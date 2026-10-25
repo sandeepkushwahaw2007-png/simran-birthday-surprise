@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffdae8">
+<title>For Simran 💗 | A Birthday Surprise</title>
+<style>
+:root{--pink:#ff5b9a;--deep:#a72c62;--rose:#fff0f6;--ink:#59263f;--gold:#ffe6a7}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,'Times New Roman',serif;color:var(--ink);background:linear-gradient(140deg,#fff8fb,#ffe1ed 48%,#fff5f8);overflow-x:hidden}
+button{font:inherit;cursor:pointer;border:0}
+button:focus-visible{outline:3px solid #a72c62;outline-offset:3px}
+.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.heart{position:absolute;bottom:-40px;opacity:.55;animation:floatUp linear infinite}
+@keyframes floatUp{to{transform:translateY(-115vh) rotate(360deg);opacity:0}}
+.wrap{position:relative;z-index:1;max-width:920px;margin:auto;padding:22px 16px 60px}
+.hero,.panel{border:1px solid #ffffffc9;background:#ffffffb8;backdrop-filter:blur(10px);box-shadow:0 18px 55px #a72c6214;border-radius:28px;padding:clamp(22px,5vw,48px);margin:18px 0;text-align:center}
+.kicker{letter-spacing:.22em;text-transform:uppercase;font:700 11px Arial,sans-serif;color:var(--deep)}
+h1{font-size:clamp(2.5rem,9vw,5.7rem);line-height:.98;margin:18px 0;color:#c13e76}
+h2{font-size:clamp(1.8rem,6vw,3rem);margin:0 0 16px;color:#b73570}
+p{font-size:clamp(1rem,2.8vw,1.18rem);line-height:1.75}
+.script{font-style:italic}
+.btn{background:linear-gradient(135deg,#ff76ab,#e83e83);color:white;border-radius:999px;padding:14px 22px;margin:8px;box-shadow:0 8px 20px #e83e8333;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.secondary{background:#fff;color:#b73570;border:1px solid #ffc1d8;box-shadow:none}
+.countdown{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;max-width:560px;margin:24px auto}
+.time{background:#fff;border:1px solid #ffd1e2;border-radius:18px;padding:13px 4px}
+.time strong{display:block;font:700 clamp(1.5rem,5vw,2.4rem) Arial,sans-serif;color:#d63f7f}
+.time span{font:11px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
+.lock-note{font:13px Arial,sans-serif;color:#99516f}
+.hidden{display:none!important}
+.section{display:none;animation:fade .65s ease}
+.section.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.nav{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:16px 0}
+.nav button{background:#ffffffb8;border:1px solid #ffc6dd;color:#a72c62;padding:10px 14px;border-radius:99px;font:13px Arial,sans-serif}
+.cake-area{margin:26px auto 12px;max-width:340px;position:relative}
+.cake{font-size:120px;line-height:1.3;filter:drop-shadow(0 12px 8px #d77a9c2b)}
+.flame{font-size:30px;display:block;margin-bottom:-6px;animation:flicker .6s infinite alternate}
+.flame.out{visibility:hidden;animation:none}
+@keyframes flicker{from{transform:scale(.9) rotate(-4deg)}to{transform:scale(1.08) rotate(5deg)}}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0}
+.photo{min-height:210px;border-radius:20px;background:linear-gradient(150deg,#ffc6dd,#fff1f7 50%,#f7a6ca);display:flex;align-items:center;justify-content:center;flex-direction:column;padding:12px;overflow:hidden;border:2px solid white;box-shadow:0 8px 20px #a72c6210}
+.photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.photo{position:relative}
+.photo .placeholder{font-size:38px}.photo small{font:12px Arial,sans-serif;text-align:center;margin-top:10px}
+.photo input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.photo .overlay{position:absolute;bottom:0;left:0;right:0;background:#6b234bcc;color:white;font:12px Arial,sans-serif;padding:8px;pointer-events:none}
+.letter{max-width:680px;margin:24px auto;background:#fffafc;border:1px solid #f5c4d7;padding:clamp(20px,5vw,40px);border-radius:8px 28px 8px 28px;text-align:left;box-shadow:0 10px 35px #a72c6210}
+.letter p{font-size:1.08rem}
+.secret{background:#fff4f8;border:1px dashed #e98bb2;border-radius:18px;padding:18px;margin:12px auto;max-width:600px}
+.poster{background:radial-gradient(circle at 50% 20%,#fff5c9,#ffc7df 40%,#e65a99 100%);border:7px double #fff3f8;border-radius:24px;padding:clamp(28px,7vw,65px) 15px;color:#9b225a;box-shadow:inset 0 0 45px #fff8,0 18px 50px #b7357020}
+.poster h2{font-size:clamp(2.3rem,9vw,5rem);color:#a51d59;text-shadow:2px 3px #fff}
+.sparkles{font-size:clamp(1.5rem,5vw,2.5rem);letter-spacing:.3em}
+footer{text-align:center;font:12px Arial,sans-serif;color:#a35c7b;padding:20px}
+@media(max-width:580px){.gallery{grid-template-columns:1fr}.photo{min-height:260px}.hero,.panel{border-radius:22px}.countdown{gap:6px}.time{border-radius:12px;padding:12px 2px}}
+</style>
+</head>
+<body>
+<div class="hearts" id="hearts"></div>
+<main class="wrap">
+  <section class="hero" id="gate">
+    <div class="kicker">A little surprise, made with love</div>
+    <h1>For Simran <span>💗</span></h1>
+    <p class="script">Sandeep has something special waiting just for you…</p>
+    <div id="countdown" class="countdown" aria-live="polite">
+      <div class="time"><strong id="days">00</strong><span>Days</span></div>
+      <div class="time"><strong id="hours">00</strong><span>Hours</span></div>
+      <div class="time"><strong id="mins">00</strong><span>Minutes</span></div>
+      <div class="time"><strong id="secs">00</strong><span>Seconds</span></div>
+    </div>
+    <p class="lock-note" id="gateMessage">Your surprise unlocks at midnight on 27 October 💌</p>
+    <button class="btn hidden" id="openBtn" onclick="unlock()">Open your surprise 💝</button>
+  </section>
+
+  <nav class="nav hidden" id="nav">
+    <button onclick="showSection('wish')">Birthday wish</button><button onclick="showSection('cakeSection')">🎂 Cake</button><button onclick="showSection('memories')">Our photos</button><button onclick="showSection('letterSection')">Love letter</button><button onclick="showSection('finale')">Final surprise</button>
+  </nav>
+
+  <section class="panel section" id="wish">
+    <div class="kicker">Today is all about you</div>
+    <h2>Happy Birthday, Simran! 💕</h2>
+    <p class="script">To the girl who makes ordinary moments feel a little more beautiful…</p>
+    <p>Today, I hope the world gives you back even a little of the happiness you bring into my life. You deserve love that feels safe, laughter that comes easily, dreams that come true, and a thousand tiny reasons to smile.</p>
+    <p><strong>Happy Birthday, meri Simran. ❤️</strong></p>
+    <button class="btn" onclick="showSection('cakeSection')">There’s a cake for you 🎂</button>
+  </section>
+
+  <section class="panel section" id="cakeSection">
+    <div class="kicker">Make a little wish</div><h2>One wish, just for you ✨</h2>
+    <p>Close your eyes, make a wish, then tap the candle to blow it out. You can also try the microphone button.</p>
+    <div class="cake-area"><span class="flame" id="flame">🕯️</span><div class="cake" aria-label="birthday cake">🎂</div></div>
+    <button class="btn" id="blowBtn" onclick="blowCandle()">Blow the candle 💨</button>
+    <button class="btn secondary" id="micBtn" onclick="listenForBlow()">Use microphone</button>
+    <p id="cakeMessage" class="script">Your wish is precious. Make it with all your heart 💗</p>
+    <button class="btn hidden" id="musicBtn" onclick="toggleMusic()">Play birthday music 🎵</button>
+    <button class="btn secondary" onclick="showSection('memories')">Next: our memories 📸</button>
+  </section>
+
+  <section class="panel section" id="memories">
+    <div class="kicker">Little moments, big feelings</div><h2>Our Beautiful Memories 📸</h2>
+    <p>Every photo has a story, and every story with you is special to me.</p>
+    <p class="lock-note">Add your photos before sharing: tap a photo box and choose an image. For the live website, upload the chosen images with the site files so Simran can see the same photos.</p>
+    <div class="gallery">
+      <label class="photo" id="photo1"><span class="placeholder">💑</span><small>Our favourite memory</small><span class="overlay">Tap to add photo 1</span><input type="file" accept="image/*" onchange="previewPhoto(event,'photo1')"></label>
+      <label class="photo" id="photo2"><span class="placeholder">🌷</span><small>A moment to keep</small><span class="overlay">Tap to add photo 2</span><input type="file" accept="image/*" onchange="previewPhoto(event,'photo2')"></label>
+      <label class="photo" id="photo3"><span class="placeholder">💞</span><small>My favourite person</small><span class="overlay">Tap to add photo 3</span><input type="file" accept="image/*" onchange="previewPhoto(event,'photo3')"></label>
+    </div>
+    <button class="btn" onclick="showSection('letterSection')">A letter from my heart 💌</button>
+  </section>
+
+  <section class="panel section" id="letterSection">
+    <div class="kicker">Just for you, Simran</div><h2>A little letter from Sandeep 💌</h2>
+    <div class="letter">
+      <p>My dearest Simran,</p>
+      <p>Happy Birthday, meri jaan. ❤️</p>
+      <p>I may not always find the perfect words, but I hope you never doubt how special you are to me. Your smile, your little habits, and the simple moments we share mean more than I can explain.</p>
+      <p>On your birthday, I wish you peace when life feels heavy, courage when things feel uncertain, and happiness that stays long after today is over. I hope you keep growing into the person you dream of becoming, and that life gives you countless reasons to feel proud of yourself.</p>
+      <p>Thank you for being a beautiful part of my world. If I could gift you one thing, it would be the chance to see yourself through my eyes — so you could understand just how precious you are.</p>
+      <p>Keep smiling, keep shining, and keep being wonderfully you.</p>
+      <p class="script">With all my love,<br><strong>Your Sandeep 💗</strong></p>
+    </div>
+    <button class="btn" onclick="revealSecret()">Open a secret message 🔐</button>
+    <div id="secret" class="secret hidden"><p class="script">Psst… my favourite part of any day is the part that has you in it. No fancy gift could ever replace the little happiness you bring me. 💗</p></div>
+    <button class="btn secondary" onclick="showSection('finale')">One last surprise 🎉</button>
+  </section>
+
+  <section class="panel section" id="finale">
+    <div class="poster">
+      <div class="sparkles">✦ ✨ 💗 ✨ ✦</div>
+      <p class="kicker">Made with all my heart</p>
+      <h2>HAPPY<br>BIRTHDAY<br>MY LOVE!</h2>
+      <p class="script">SIMRAN — YOU ARE SO LOVED 💖</p>
+      <div class="sparkles">🌹 🎂 🌹</div>
+      <p>May your year be as lovely as your heart, as bright as your smile, and as magical as this moment.</p>
+      <p class="script"><strong>Forever cheering for you, Sandeep ❤️</strong></p>
+    </div>
+    <button class="btn" onclick="celebrate()">More confetti! 🎊</button>
+    <button class="btn secondary" onclick="showSection('wish')">Read my wish again 💌</button>
+  </section>
+  <footer>Made with love by Sandeep for Simran • 27 October 2026 💗</footer>
+</main>
+<script>
+const target = new Date('2026-10-27T00:00:00+05:30').getTime();
+let unlocked = false, audioCtx = null, musicTimer = null, musicOn = false;
+function updateCountdown(){
+ const now=Date.now(), left=target-now;
+ if(left<=0){['days','hours','mins','secs'].forEach(id=>document.getElementById(id).textContent='00');document.getElementById('gateMessage').textContent='It’s your birthday, Simran! Your surprise is ready 💗';document.getElementById('openBtn').classList.remove('hidden');return}
+ const d=Math.floor(left/86400000),h=Math.floor(left%86400000/3600000),m=Math.floor(left%3600000/60000),s=Math.floor(left%60000/1000);
+ document.getElementById('days').textContent=String(d).padStart(2,'0');document.getElementById('hours').textContent=String(h).padStart(2,'0');document.getElementById('mins').textContent=String(m).padStart(2,'0');document.getElementById('secs').textContent=String(s).padStart(2,'0');
+}
+setInterval(updateCountdown,1000);updateCountdown();
+function unlock(){if(Date.now()<target){alert('Almost there! Your surprise unlocks at midnight 💗');return}unlocked=true;document.getElementById('nav').classList.remove('hidden');showSection('wish');celebrate()}
+function showSection(id){if(!unlocked && Date.now()>=target)unlocked=true;if(!unlocked){alert('Your surprise unlocks at midnight on 27 October 💌');return}document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));document.getElementById(id).classList.add('active');document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'})}
+function blowCandle(){document.getElementById('flame').classList.add('out');document.getElementById('cakeMessage').textContent='Wish made! May all your sweetest dreams come true. Happy Birthday, Simran! 🎉';document.getElementById('musicBtn').classList.remove('hidden');startMusic();celebrate()}
+function getAudio(){if(!audioCtx)audioCtx=new (window.AudioContext||window.webkitAudioContext)();if(audioCtx.state==='suspended')audioCtx.resume();return audioCtx}
+function tone(freq,start,duration,volume=.08){const c=getAudio(),o=c.createOscillator(),g=c.createGain();o.type='sine';o.frequency.value=freq;g.gain.setValueAtTime(.0001,start);g.gain.exponentialRampToValueAtTime(volume,start+.03);g.gain.exponentialRampToValueAtTime(.0001,start+duration);o.connect(g);g.connect(c.destination);o.start(start);o.stop(start+duration+.02)}
+function startMusic(){try{const c=getAudio();const melody=[523,523,587,523,698,659,523,523,587,523,784,698,523,523,1047,880,698,659,587,932,932,880,698,784,698];let t=c.currentTime+.08;melody.forEach((n,i)=>{tone(n,t,.28,.07);t+=.32});musicOn=true;document.getElementById('musicBtn').textContent='Play birthday music again 🎵'}catch(e){document.getElementById('cakeMessage').textContent='Tap “Play birthday music” to allow audio in your browser 💗'}}
+function toggleMusic(){startMusic()}
+async function listenForBlow(){if(!navigator.mediaDevices||!navigator.mediaDevices.getUserMedia){alert('Microphone is not available here. Tap the candle button instead 💗');return}try{const stream=await navigator.mediaDevices.getUserMedia({audio:true}),ctx=getAudio(),source=ctx.createMediaStreamSource(stream),analyser=ctx.createAnalyser();analyser.fftSize=512;source.connect(analyser);const data=new Uint8Array(analyser.frequencyBinCount);document.getElementById('cakeMessage').textContent='Blow gently into your microphone now…';let tries=0;const check=()=>{analyser.getByteTimeDomainData(data);let sum=0;for(let x of data)sum+=(x-128)*(x-128);const rms=Math.sqrt(sum/data.length);if(rms>15){stream.getTracks().forEach(t=>t.stop());blowCandle()}else if(++tries<100)setTimeout(check,100);else{stream.getTracks().forEach(t=>t.stop());document.getElementById('cakeMessage').textContent='No blow detected — tap the candle button instead 💗'}};check()}catch(e){alert('Microphone permission was not granted. You can tap the candle button instead 💗')}}
+function previewPhoto(event,id){const file=event.target.files[0];if(!file)return;const box=document.getElementById(id);let img=box.querySelector('img');if(!img){img=document.createElement('img');box.appendChild(img)}img.src=URL.createObjectURL(file);box.querySelector('.placeholder').style.display='none';box.querySelector('small').style.display='none';box.querySelector('.overlay').textContent='Preview only — upload image with site to share'}
+function revealSecret(){document.getElementById('secret').classList.toggle('hidden')}
+function celebrate(){const symbols=['💗','✨','🌸','💕','🎉'];for(let i=0;i<32;i++){const el=document.createElement('span');el.textContent=symbols[Math.floor(Math.random()*symbols.length)];el.style.cssText=`position:fixed;z-index:20;left:${Math.random()*100}vw;top:-30px;font-size:${18+Math.random()*20}px;pointer-events:none;transition:transform ${2+Math.random()*2}s linear,opacity 3s;`;document.body.appendChild(el);requestAnimationFrame(()=>{el.style.transform=`translateY(${window.innerHeight+80}px) rotate(${Math.random()*500}deg)`;el.style.opacity='0'});setTimeout(()=>el.remove(),4200)}}
+for(let i=0;i<18;i++){const h=document.createElement('span');h.className='heart';h.textContent=['♡','♥','✧'][i%3];h.style.left=(Math.random()*100)+'%';h.style.fontSize=(14+Math.random()*24)+'px';h.style.animationDuration=(9+Math.random()*12)+'s';h.style.animationDelay=(-Math.random()*15)+'s';document.getElementById('hearts').appendChild(h)}
+</script>
+</body>
+</html>
